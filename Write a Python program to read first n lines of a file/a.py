@@ -2,14 +2,14 @@ file_path = "NS.txt"  # Replace 'example.txt' with your file path
 n = 1  # Number of lines to read
 
 try:
-    with open(file_path, 'r') as file:
-        lines = []
-        for i in range(n):
-            line = file.readline()
-            if line:
-                lines.append(line)
-            else:
-                break
+    A = open(file_path, 'r') 
+    lines = []
+    for i in range(n):
+        line = A.readline()
+        if line:
+            lines.append(line)
+        else:
+            break
     
     print(f"First {len(lines)} lines of the file:")
     for line in lines:
